@@ -1,13 +1,18 @@
 #Chapter 4 Excercise
 
-#4.1
-import random
-secret_number=random.randint(1,10)
-guess_number=int(input("추측하는 숫자를 입력하세요(1~10):"))
+#4.2
 
-if secret_number==guess_number:
-    print("Just Right!")
-elif secret_number>guess_number:
-    print("Too high")
-elif secret_number<guess_number:
-    print("Too low")
+small=False
+green=True
+
+if small:
+    if not green:
+        print("완두콩은 작고 녹색이다.")
+    elif green:
+        print("체리는 작고 녹색이 아니다.")
+elif not small:
+    if not green:
+        print("수박은 크고 녹색이다")
+    elif green:
+        print("호박은 크고 녹색이 아니다.")
+
